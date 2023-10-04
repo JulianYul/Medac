@@ -1,0 +1,17 @@
+body{
+    font-family:monospace;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    text-align: center;
+}
+
+legend{
+    color:blueviolet;
+}
+
+button{
+    color:indigo;
+}

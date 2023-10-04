@@ -1,0 +1,120 @@
+<!--
+        Crea un formulario en un documento web que pregunte lo siguiente:
+            • Nombre de usuario
+            • Contraseña
+            • Confirmación de contraseña
+            • Correo electrónico
+            • Confirmación de correo electrónico
+            • Sexo
+            • País
+    - Para la contraseña deberá ocultarse el valor tecleado.
+    - Para el desarrollo de esta actividad debéis de incluir un formulario que disponga de una
+      etiqueta con el nombre del campo y una caja de texto para introducir el valor. Al final del formulario aparecerá un botón con la palabra “Enviar”.
+    - Recuerda que un documento web tiene dos partes, cabecera y cuerpo. Ten en cuenta que la introducir un formulario deberás utilizar la etiqueta <form>
+--> 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Actividad 1 - Tema 2</title>
+</head>
+<body>
+    <h3>Actividad 1 - Tema 2: Entorno Cliente</h3>
+        <form action="#">
+         <fieldset>
+            <legend>Creación de nuevo usuario:</legend>
+                <div>
+                    <label for="usuario">Nombre de usuario:</label>
+                    <!-- Aparece por defecto "Usuario" y al hacer click, desaparece -->
+                    <input id="Usuario" type="text" value="Usuario..." name="Usuario" onclick="if(this.value=='Usuario...') this.value=''" onblur="if(this.value=='') this.value='Usuario...'">
+                    
+                </div><br>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input class="form-control" type="password" name="password" id="password" size="15" maxsize="20">
+                    <button class="btn btn-primary" type="button" onclick="mostrarContraseña()">Mostrar Contraseña</button>
+                </div><br>  
+                    
+                <div>
+                    <label for="contraseña">Confirmar contraseña:</label>
+                    <input class="form-control" type="password" name="confirmpassword" id="confirmpassword" size="15" maxsize="20">
+                    <button class="btn btn-primary" type="button" onclick="confirmarContraseña()">Mostrar Contraseña</button>
+                </div><br>
+                
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input id="correo" type="text" name="correo" size="15" maxsize="20">
+                </div><br>
+
+                <div>
+                    <label for="confirmcorreo">Confirmar correo electrónico:</label>
+                    <input id="confirmcorreo" type="text" name="confirmcorreo" size="15" maxsize="20">
+                </div><br>
+
+                <div>Sexo:<br>
+                     <input type="radio" id="hombre" name="sexo" value="hombre">
+                     <label for="hombre">Hombre</label><br>
+                     <input type="radio" id="mujer" name="sexo" value="mujer">
+                     <label for="mujer">Mujer</label><br>
+                     <input type="radio" id="hel" name="sexo" value="hel">
+                     <label for="hel">Helicóptero</label><br>
+                </div><br>
+
+                <div>
+                    <label for="ciudad">Ciudad:</label>
+                    <select name="pais">
+                        <option value="MUR">Murcia</option>
+                        <option value="MAD">Madrid</option>
+                        <option value="ALB">Albacete</option>
+                        <option value="SEV">Sevilla</option>
+                        <option value="GR">Granada</option>
+                        <option value="VAL">Valencia</option>
+                        <option value="" selected="selected">Selecciona ciudad...</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <input type="submit" name="submit" value="Crear usuario">
+                    <input type="reset" name="reset" value="Borrar todo">
+
+                </div>
+
+
+         </fieldset>    
+        </form>
+
+
+        <!-- 
+               --------------------------------------------------------
+             || JavaScript para mostrar botón de ver o no la contraseña || 
+               --------------------------------------------------------
+        -->
+    <script>
+        function mostrarContraseña()
+        {
+            var tipo = document.getElementById("password");
+            if(tipo.type == "password")
+                {
+                    tipo.type = "text";
+                }else{
+                    tipo.type = "password";
+                }
+        }
+        function confirmarContraseña()
+        {
+            var tipo = document.getElementById("confirmpassword");
+            if(tipo.type == "password")
+                {
+                    tipo.type = "text";
+                }else{
+                    tipo.type = "password";
+                }
+        }
+    </script>
+
+    
+</body>
+</html>

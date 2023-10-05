@@ -3,8 +3,8 @@
 #### 🖊**Actividades voluntarias del curso de Desarrollo de Aplicaciones Web en Medac**  
 
 
-> 📢 En este repositorio iré subiendo las actividades corresopondientes a cada tema del 2º año de FP Superior DAW  
-    además, lo utilizaré como repositorio de 'pruebas' para aprender a utilizar Git y GitHub
+> 📢 En este repositorio subiré las actividades corresopondientes a cada tema del 2º año de FP Superior DAW
+ además, lo utilizaré como repositorio de 'pruebas' para aprender a utilizar Git y GitHub
 
 
 

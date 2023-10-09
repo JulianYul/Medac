@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +22,17 @@
 
         // Mostramos en pantalla las variables que hemos creado
 
-        echo "· Variable de tipo 'Cadena de texto': " . $varTexto . "</br>";
-        echo "· Variable de tipo 'Entero': " . $varEntero . "</br>";
-        echo "· Variable de tipo 'Boolean': " . $varBoolean . "</br>";
-        echo "· Variable de tipo 'Float': " . $varFloat . "</br>";
-        echo "· Variable de tipo compuesto: ";
+        echo "· Variable tipo 'Cadena de texto': " . $varTexto . "</br>";
+        echo "· Variable tipo 'Entero': " . $varEntero . "</br>";
+        echo "· Variable tipo 'Boolean': " . $varBoolean . "</br>";
+        echo "· Variable tipo 'Float': " . $varFloat . "</br>";
+        echo "· Variable tipo compuesto: ";
             print_r($varArray) ;
         echo  "</br>" . "· La primera posición del array es: " . $varArray[0] . "</br>"; 
 
         // Ahora vamos a hacer unas sencillas operaciones aritméticas
 
-        echo "<h1>CÁLCULOS ARITMÉTICOS</h1>";
+        echo "<h1>Cálculos aritméticos</h1>";
 
         $var1 = 2;
         $var2 = 8;
@@ -41,11 +41,11 @@
         $multi = $var1*$var2;
         $div = $var1/$var2;
         
-        echo "Los números que vamos a utilizar son: $var1 y $var2" . "</br>";
-        echo "Si los restamos, obtenemos: $resta" . "</br>";
-        echo "Si los sumamos: $suma" . "<br/>"; // La etiqueta <br> también está aceptada de esta manera
-        echo "Si los multiplicamos: $multi" . "</br>"; 
-        echo "Si los dividimos: $div" . "<br>"; // También podemos ponerla de esta otra manera
+        echo "· Los números que vamos a utilizar son: $var1 y $var2" . "</br>";
+        echo "· Si los restamos, obtenemos: $resta" . "</br>";
+        echo "· Si los sumamos: $suma" . "<br/>"; // La etiqueta <br> también está aceptada de esta manera
+        echo "· Si los multiplicamos: $multi" . "</br>"; 
+        echo "· Si los dividimos: $div" . "<br>"; // También podemos ponerla de esta otra manera
         
     ?>
     

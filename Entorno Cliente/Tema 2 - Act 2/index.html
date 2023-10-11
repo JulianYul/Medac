@@ -59,11 +59,16 @@
     <script>
         function mostrarSeleccion() {
             const frutaSeleccionada = document.getElementById("frutas").value;
-            
+            event.preventDefault();
+            if (frutaSeleccionada == "Elige") {
+                alert("No seas tramposo, eso no es una fruta");
+                console.log("No seas tramposo, eso no es una fruta");
+            }else{
                 alert("Te has convertido en: " + frutaSeleccionada);
                 console.log("Te has convertido en: " + frutaSeleccionada);
+
             
-            
+            }   
         }
     </script>
     </form>

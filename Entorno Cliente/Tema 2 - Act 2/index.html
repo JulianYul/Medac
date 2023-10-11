@@ -1,0 +1,75 @@
+<!-- 
+    · Crea un documento web en el que se muestre una lista desplegable con un conjunto de frutas. 
+    Al lado de esta lista, aparecerá un botón. 
+    Al hacer clic en el botón aparecerá un mensaje en pantalla y en la consola del navegador indicando la fruta seleccionada.
+    Para el desarrollo de esta actividad:
+     - Será necesario crear en primer lugar el documento web con HTML básico.
+     - Una vez que dispongamos de la estructura HTML, podremos añadir la funcionalidad JavaScript.
+    Para esta actividad es importante que todo el código se pueda recoger en un único archivo.
+    Recuerda que para introducir código de script se utiliza la etiqueta <script>.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2 - Actividad 2</title>
+    <style type = "text/css">
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            height: 100vh;
+            background-color: #f1f1f1;
+         }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        #frutas {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action ="index.html"  method="post">
+        <label for="frutas" id="seleccion">Selecciona una fruta: </label>
+        <select id="frutas" name="frutas" autofocus required>
+
+            <option id="MAN">Manzana</option>
+            <option id="PLA">Plátano</option>
+            <option id="COC">Coco</option>
+            <option id="PER">Pera</option>
+            <option id="MEL">Melón</option>
+            <option id="DEF" selected>Elige</option>            
+        </select><br><br>
+        <button onclick="mostrarSeleccion()">Frutízame</button>
+
+    <script>
+        function mostrarSeleccion() {
+            var frutaSeleccionada = document.getElementById("frutas").value;
+            /*if ("frutas" == "DEF") {
+                alert("No seas tramposo, eso no es una fruta");
+                console.log("No seas tramposo, eso no es una fruta");
+            }else{*/
+                alert("Te has convertido en: " + frutaSeleccionada);
+                console.log("Te has convertido en: " + frutaSeleccionada);
+            //}
+            
+        }
+    </script>
+    </form>
+    
+</body>
+</html>

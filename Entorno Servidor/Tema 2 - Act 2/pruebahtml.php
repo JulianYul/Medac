@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba HTML con código PHP embebido</title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" type = "text/css" href="master.css">
 </head>
 <body>
 
     <h1>Trabajando con variables</h1>
 
     <!-- Aquí comenzamos el código en PHP -->
-
+    
     <?php
         
         $varTexto = "Hola"; // Cadena de texto
@@ -21,15 +21,15 @@
         $varArray = array ("1", "2", "3"); // Array
 
         // Mostramos en pantalla las variables que hemos creado
-
-        echo "· Variable tipo 'Cadena de texto': " . $varTexto . "</br>";
+        "<p>";
+        echo "Variable tipo 'Cadena de texto': " . $varTexto . "</br>";
         echo "· Variable tipo 'Entero': " . $varEntero . "</br>";
         echo "· Variable tipo 'Boolean': " . $varBoolean . "</br>";
         echo "· Variable tipo 'Float': " . $varFloat . "</br>";
         echo "· Variable tipo compuesto: ";
             print_r($varArray) ;
         echo  "</br>" . "· La primera posición del array es: " . $varArray[0] . "</br>"; 
-
+        "</p>";
         // Ahora vamos a hacer unas sencillas operaciones aritméticas
 
         echo "<h1>Cálculos aritméticos</h1>";
@@ -48,6 +48,7 @@
         echo "· Si los dividimos: $div" . "<br>"; // También podemos ponerla de esta otra manera
         
     ?>
+    
     
 </body>
 </html>

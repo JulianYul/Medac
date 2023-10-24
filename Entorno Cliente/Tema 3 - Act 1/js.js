@@ -1,0 +1,1 @@
+console.log("JavaScript ha cargado el fichero externo correctamente capitán");

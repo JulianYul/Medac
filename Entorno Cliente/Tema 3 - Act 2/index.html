@@ -1,0 +1,37 @@
+<!-- 
+    Crea un documento web en el que se pueda ejecutar un código JavaScript. 
+    Este código debe declarar al menos cuatro variables de tipos diferentes: un número, una cadena de caracteres, un tipo lógico y una variable sin tipo.
+    Una vez que tengas las cuatro variables declaradas, deberás asignar un valor a cada una de ellas acorde con el tipo indicado en su declaración. 
+    Para la variable que queda sin tipo, será necesario realizar las modificaciones oportunas para que almacene una cadena caracteres tras asignar el valor del resto de variables. 
+    Cuando se asigne dicho valor, deberás mostrar en la consola del navegador el resultado.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 Tema 3</title>
+    <script type="text/javascript">
+
+        let nombre = String('Julian');
+        let telefono = Number('666777888');
+        let matriculado = Boolean(1);
+        let resultado;
+
+        resultado = String(telefono) + " " + nombre + " " + String(matriculado);
+        
+        console.log("La variable resultado es de tipo: " + typeof(resultado));
+        console.log("En la variable resultado se esconde: " + resultado);
+
+    </script>
+</head>
+<body>
+
+    <p class="consola">
+        Mira la consola
+    </p>
+    
+</body>
+</html>

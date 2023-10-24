@@ -1,0 +1,89 @@
+<!-- 
+    Crea un documento web en el que se pueda ejecutar un código JavaScript. 
+    Este código debe declarar al menos cuatro variables de tipo número que indicarán la nota de 4 alumnos diferentes.
+    Una vez que tengas las 4 notas declaradas, deberás crear un código JavaScript que:
+        1. Calcule la nota media y la muestre por la consola del navegador.
+        2. Realice una calificación numérica de cada una de ellas siguiendo el siguiente criterio:
+            - Nota < 5: suspenso
+            - Nota < 7: Aprobado
+            - Nota < 9: Notable
+            - Nota <=10: Sobresaliente
+    Para esta actividad recuerda que deberás diferentes operadores de comparación y sentencias de comparación.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 Tema 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let julian = 10;
+        let sandra = 7;
+        let ruben = 3;
+        let tomas = 5;
+
+        //Sacamos la nota media por consola
+        console.log( "La nota media de los alumnos es de: " + (julian+sandra+ruben+tomas) / 4 );
+
+        //Califiación numérica de cada uno
+        nota1 = julian;
+        nota2 = sandra;
+        nota3 = ruben;
+        nota4 = tomas;
+
+        //Nota de JULIÁN por consola
+        if(nota1 < 5){
+            console.log("Julian tiene un Suspenso " + julian);
+        }else if (nota1 < 7){
+            console.log("Julian tiene un Aprobado " + julian);
+        }else if (nota1 < 9){
+            console.log("Julian tiene un Notable " + julian);
+        }else if (nota1 <= 10){
+            console.log("Julian tiene un Sobresaliente " + julian);
+        }
+
+         //Nota de SANDRA por consola
+         if(nota2 < 5){
+            console.log("Sandra tiene un Suspenso " + sandra);
+        }else if (nota2 < 7){
+            console.log("Sandra tiene un Aprobado " + sandra);
+        }else if (nota2 < 9){
+            console.log("Sandra tiene un Notable " + sandra);
+        }else if (nota2 <= 10){
+            console.log("Sandra tiene un Sobresaliente " + sandra);
+        }
+
+         //Nota de RUBÉN por consola
+         if(nota3 < 5){
+            console.log("Rubén tiene un Suspenso " + ruben);
+        }else if (nota3 < 7){
+            console.log("Rubén tiene un Aprobado " + ruben);
+        }else if (nota3 < 9){
+            console.log("Rubén tiene un Notable " + ruben);
+        }else if (nota3 <= 10){
+            console.log("Rubén tiene un Sobresaliente " + ruben);
+        }
+
+         //Nota de TOMÁS por consola
+         if(nota4 < 5){
+            console.log("Tomás tiene un Suspenso " + tomas);
+        }else if (nota4 < 7){
+            console.log("Tomás tiene un Aprobado " + tomas);
+        }else if (nota4 < 9){
+            console.log("Tomás tiene un Notable " + tomas);
+        }else if (nota4 <= 10){
+            console.log("Tomás tiene un Sobresaliente " + tomas);
+        }
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

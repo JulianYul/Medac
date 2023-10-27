@@ -29,18 +29,17 @@ body {
     padding: 20px 20px 0px 20px;
 }
 
-.google #enlace {
+a {
     font-size: 2rem;
     padding: 40px;
-    text-decoration: none;
-    font-style: normal;
+    font-style: italic;
     color: gray
 }
 
-.google a:visited {
+a:visited {
     text-decoration: underline double;
     font-weight: bold;
     font-style: normal;
     color: red;
-
 }
+

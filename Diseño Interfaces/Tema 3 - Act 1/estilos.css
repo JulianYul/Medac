@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.titulo {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    color: tomato;
+}
+
+.camisetas {
+    padding: 10px;
+    flex-direction: column; 
+    justify-content: center;
+    margin: 20px;
+}
+
+.marca {
+    padding: 100px;
+}
+
+.descr-marca {
+    font-size: 1.2rem;
+}
+
+.listado {
+    padding: 20px 20px 0px 20px;
+}
+
+.google #enlace {
+    font-size: 2rem;
+    padding: 40px;
+    text-decoration: none;
+    font-style: normal;
+    color: gray
+}
+
+.google a:visited {
+    text-decoration: underline double;
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+
+}

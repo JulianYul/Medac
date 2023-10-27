@@ -1,0 +1,98 @@
+<!--
+    Desde la empresa de diseño y venta de camisetas personalizadas nos han pedido hacer un primer diseño de la pantalla de inicio, 
+    en la que se incluyen 3 imágenes con diseños de la marca (puedes usar imágenes libres de derechos como las disponibles en pixabay.com/es.
+    Bajo cada una de las imágenes, se desea que se incluya una descripción del producto con el nombre del diseño.
+    También aparecerá un párrafo con la descripción de la marca y un listado de todos los productos principales del sitio.
+    En primer lugar, implementa un fichero en HTML y a continuación, desarrolla la hoja de estilo en CSS y establece la conexión entre ambos documentos.
+    Las pautas de diseño mínimas son:
+        • La fuente de la página HTML presenta siempre el mismo color negro, con tipografía Arial y un tamaño de 12 puntos.
+        • Debe haber, al menos, diez bloques compuestos por elementos vistos en el Tema 2 o cualquier otro que conozcas (encabezados, párrafos, capas, tablas, ...).
+        • Los títulos serán de un color diferente al resto del texto, y su tamaño debe ser el doble del texto base del resto de la página.
+        • Los elementos que forman parte del listado deben aparecer alineados a la izquierda.
+        • Finalmente, se debe incorporar un enlace directo a cualquier buscador de Internet (por ejemplo, Google). Si no se ha visitado este sitio web, 
+            el enlace aparecerá en cursiva y de color gris. Cuando se haya visitado, su aspecto cambiará y será de color rojo y en negrita, subrayado por dos líneas.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <!-- Metadatos -->
+     <meta charset="UTF-8">
+     <meta name="author" content="Julian Gallego">
+     <meta name="description" content="Tienda de camisetas personalizadas">
+     <meta name="keywords" content="Tienda, Ropa, Deporte, Camisetas, Personalizacion">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Titulo -->
+     <title>Deportes en portes</title>
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="C:\xampp\htdocs\PROYECTOSWEB\imagenes\favicon.png">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- CSS -->
+     <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="titulo text-center">
+        <h1>DEPORTES EN PORTES</h1>
+
+    </section>
+
+    <section class="listado">
+        <div>
+            <h2>Categorías</h2>
+                <div class="lista">
+                    <ul>
+                        <li>Algodón</li>
+                        <li>Licra</li>
+                        <li>Latex</li>
+                        <li>Punto de cruz</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+    <section class="camisetas d-flex">
+        <div class="row text-center camisetas-img justify-content-center">
+            <div class="camiseta1 col-12 col-md-4">
+                <img src="img/camiseta1.png" alt="Camiseta 1">
+                <h2>Camiseta manteca</h2>
+                <div class="descripcion text-center">Camiseta hermética que no dejará salir ni un ápice de aire</div>
+            </div>
+            <div class="camiseta1 col-12 col-md-4">
+                <img src="img/camiseta2.png" alt="Camiseta 2">
+                <h2>Camiseta Pomada</h2>
+                <div class="descripcion text-center">Camiseta ajustada para marcar pectorales</div>
+            </div>
+            <div class="camiseta1 col-12 col-md-4">
+                <img src="img/camiseta3.png" alt="Camiseta 3">
+                <h2>Camiseta Pata Negra</h2>
+                <div class="descripcion text-center">Camiseta ideal para diferenciar el sudor de tu sobaco</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marca d-flex flex-column text-center justify-content-center">
+            <div class="descr-marca">
+                <p>
+                    Somos una marca que trabaja poco y con pocas ganas, pero si pides una camiseta, prometemos intentar hacer lo posible para que la recibas<br>
+                    Y lo que no podamos hacer, también haremos lo posible por intentar hacerlo.
+                </p>
+            </div>
+
+    </section>
+    
+
+    <section class="enlace d-flex flex-column">
+        <div class="google">
+            <a href="https://www.google.es" target="_blank" rel="noopener noreferrer">Google</a>
+        </div>
+
+    </section>
+
+    
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

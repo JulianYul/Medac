@@ -1,0 +1,91 @@
+<!-- 
+    El lenguaje de marcas HTML es uno de los protagonistas principales en el desarrollo de un sitio web.
+     Adquirir los contenidos básicos de éste resultan imprescindibles para el posterior uso de las hojas de estilo en CSS.
+    En este ejercicio de proporciona un fichero en HTML que presenta varios errores en su implementación. 
+    Para resolverlos se necesita hacer una lectura comprensiva del código para mejorar su funcionamiento.
+    Tras concluir la revisión y reconstrucción de la página de formulario, crea otra página web con un diseño básico con un botón que,
+    al ser pulsado lleve al usuario a la página de formulario desarrollada.
+    El código a revisar es el siguiente:
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<h1><center>Formulario. Página de contacto</center></h1>
+<p>A través de este formulario se realizará el envío de cualquier sugerencia. En los cuadros de
+texto intreduce los datos solicitados y a continuación, escoge el tipo de dispositivo que utilizas
+para visitar este sitio web. Finalmente, pulsa Enviar mensaje, si quieres dejar más de un mensaje
+basta con pulsar Comenzar de nuevo. </p>
+<form action="">
+<fieldset>
+<legend>Mensaje</legend>
+<p><label>Tu nombre: <type="text" name="nombre"></label></p>
+<p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
+<p>
+<label>
+Tu mensaje:<br>
+<textarea name="mensaje"></textarea>
+</label>
+</p>
+</fieldset>
+<fieldset>
+<legend>Nuevos temas</legend>
+<p>
+¿Qué dispositivo has utilizado para acceder a este sitio web?<br>
+<label><input type="" name="ordenador"> Ordenador</label>
+<label><input type="" name="moval"> Móvil </label>
+<label><input type="" name="tablet"> Tablet</label>
+<label><input type="" name="otros"> otros</label>
+</p>
+</fieldset>
+<p>
+<input type="" value="Enviar mensaje">
+<input type="" value="Comenzar de nuevo">
+</p>
+</form>
+</body>
+</html>
+-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Actividad 2 Tema 2</title>
+</head>
+<body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif "> <!-- Tipo de letra cambiado -->
+<h1 style="text-align: center;">Formulario. Página de contacto</h1> <!-- Etiqueta correcta para centrar texto -->
+<p>A través de este formulario se realizará el envío de cualquier sugerencia. <br>
+    En los cuadros de  texto introduce los datos solicitados y a continuación, escoge el tipo de dispositivo que utilizas
+    para visitar este sitio web. <br>
+    Finalmente, pulsa "Enviar mensaje", si quieres dejar más de un mensaje basta con pulsar "Comenzar de nuevo". </p> <!-- Mejora de ortografía -->
+<form name="formulario" action="formulario.php" method="POST"> <!-- añadido metodo POST, action y name para poder recibir los datos -->
+<fieldset style="width: 50%;"> <!-- tamaño de la caja del formulario -->
+<legend>Mensaje</legend>
+<p><label>Tu nombre: <input type="text" name="nombre" style="width: 10rem;" required></label></p> <!-- Añadida la palabra input, un tamaño al area de texto y required -->
+<p><label>Tu dirección de correo: <input type="mail" name="correo" style="width: 15rem;" required></label></p> <!-- Añadido un tamaño al area de texto y required-->
+<p>
+<label>
+Tu mensaje:<br>
+<textarea rows="5" cols="50" name="mensaje" id="mensaje"></textarea> <!-- Añadido un tamaño con rows y cols y añadido un id-->
+</label>
+</p>
+</fieldset>
+<fieldset style="width: 50%;"> <!-- tamaño de la caja del formulario -->
+<legend>Dispositivo</legend> <!-- Cambiado el titulo de la caja -->
+<p>
+¿Qué dispositivo has utilizado para acceder a este sitio web?<br><br> <!-- Añadido otro <br> para separar un poco más el texto de las opciones -->
+<label><input type="radio" name="radio" value="Ordenador" id="ordenador" >Ordenador</label> <!-- Añadido el "Type radio" con el mismo "name" a los input para solo poder marcar una opción y añadido value -->
+<label><input type="radio" name="radio" value="Móvil" id="movil" >Móvil </label>
+<label><input type="radio" name="radio" value="Tablet" id="tablet" >Tablet</label>
+<label><input type="radio" name="radio" value="Otros" id="otros" >Otros</label>
+</p>
+</fieldset>
+<p>
+<input type="submit" value="Enviar mensaje"> <!-- Añadido "submit" -->
+<input type="reset" value="Comenzar de nuevo"> <!-- Añadido "reset" -->
+</p>
+</form>
+</body>
+</html>
+

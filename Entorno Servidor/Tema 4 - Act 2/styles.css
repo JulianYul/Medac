@@ -1,0 +1,47 @@
+/* Estilos generales */
+
+body {
+    background-color: rgb(192, 190, 190);
+    font-family: Verdana,Helvetica;
+}
+
+.formulario {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20%;
+}
+
+/* Casillas de texto */
+.insert-oscuro {
+    background-color: rgb(63, 62, 62);
+    color: white;
+    text-align: center;
+}
+
+/* Botones */
+
+.boton {
+    font-weight: bold;
+    background-color: #638cb5;
+    font-family:Verdana,Helvetica;
+}
+
+.volver {
+    text-align: center;
+    padding-top: 1rem;
+} 
+
+.atras {  
+    font-weight: bold;
+    background-color: #638cb5;
+    font-family:Verdana,Helvetica;
+    text-align: center;
+}
+
+/* Mensaje datos formulario */
+
+.php {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20%;
+}

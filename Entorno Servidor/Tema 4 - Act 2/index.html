@@ -1,0 +1,47 @@
+<!--
+   Para este ejercicio se puede utilizar parte del Ejercicio 2 del Tema 3. 
+   Se pide implementar un programa PHP que recibe 2 variables, una de tipo entero y otra de tipo String, enviadas a través de un formulario HTML.
+    A continuación, se debe comprobar si la cadena de texto es “User 1” y el número es “1234”, contemplándose las siguientes salidas:
+        • Si solo es igual la cadena de texto: “Lo siento, el usuario es correcto, pero la contraseña no”
+        • Si solo es igual el número: “Lo siento, este usuario no es válido”
+        • Si ninguna de las dos es correcta: “No has acertado ninguna”
+        • Solo si las dos son iguales: “Genial, puedes pasar!!”
+    
+    Diseña el programa completo, tanto la petición con formulario HTML desde el cliente, hasta el tratamiento PHP que se lleva a cabo desde el servidor.
+        • Crea un formulario en HTML que tenga dos cajas de texto y un botón.
+        • El método utilizado será GET y se enviará a un fichero PHP con el nombre datosRecibidos.php
+        • Desde el fichero PHP se comprueba cuál de las casuísticas se cumple y se devuelve alguno de los
+            siguientes mensajes, si la cadena de texto es “User 1” y el número es “1234”:
+        • Si solo es igual la cadena de texto: “Lo siento, el usuario es correcto , pero la contraseña no”
+        • Si solo es igual el número: “Lo siento, este usuario no es válido”
+        • Si ninguna de las dos es correcta: “No has acertado ninguna”
+        • Solo si las dos son iguales: “Genial, puedes pasar!!”
+        • El código debe estar comentado
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 Tema 3</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    
+    <section class="formulario">
+        <form method="GET" action="datosRecibidos.php"> <!-- Marcamos el método de envío de la información y dónde se envía -->
+
+            <label class="login" for="login">Usuario: </label><br>
+            <input class="insert-oscuro" type="text" placeholder="Usuario..." name="login" size="15" required><br><br>
+            <label class="pass" for="password">Contraseña: </label><br>
+            <input class="insert-oscuro" type="password" placeholder="Contraseña..." name="password" size="15" required><br><br>
+            <input class="boton" type="submit" value="Confirmar">
+
+        </form>
+
+    </section>
+   
+
+ </body>
+ </html>

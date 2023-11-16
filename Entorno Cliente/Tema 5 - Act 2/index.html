@@ -1,0 +1,37 @@
+<!--
+    Crea un documento web que posea un botón y un cuadro de texto.
+    Al pulsar el botón se abrirá una ventana que mostrará el valor tecleado en el cuadro de texto.
+    Declara un botón que permita realizar una acción al realizar clic sobre él.
+    En este momento consultará el cuadro de texto, leerá el valor y abrirá una nueva ventana pasando el valor leído por parámetro.
+    La nueva ventana deberá mostrar una web que muestre el valor que le llega por parámetro.
+   
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 Tema 5</title>
+</head>
+<body>
+
+    <h1>Funcion JavaScript</h1>
+
+    <p>Introduce tu texto: <input type="text" id="texto"></p>
+    <p><button type="button" id="boton" onclick="ventana()">Mostrar</button></p>
+    
+
+    <script>
+       
+        function ventana() {
+            let mostrarTexto = document.getElementById("texto").value;
+            let configuracion = "width=300,height=300,scrollbars=NO";
+            let nuevaVentana = window.open("", mostrarTexto, configuracion);
+            nuevaVentana.document.body.innerHTML = mostrarTexto;
+        }
+        
+    </script>
+
+</body>
+</html>
